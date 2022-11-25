@@ -58,7 +58,7 @@ spec:
       properties:
         cluster_id:
           title: Kubernetes Cluster
-          type: stringk
+          type: string
           description: Name of Kubernetes Cluster
         namespace:
           title: Namespace
