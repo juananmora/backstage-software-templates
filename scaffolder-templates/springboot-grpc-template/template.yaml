@@ -51,15 +51,20 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
-    - title: Choose Kubernetes Infrastructure
+    - title: Choose Kubernetes Infrastructure (for Development)
       required:
         - cluster_id
         - namespace
+        - token
       properties:
         cluster_id:
           title: Kubernetes Cluster
           type: string
           description: Name of Kubernetes Cluster
+         token:
+          title: Token
+          type: string
+          description: Kubernetes Token
         namespace:
           title: Namespace
           type: string
