@@ -61,7 +61,7 @@ spec:
           title: Kubernetes Cluster
           type: string
           description: Name of Kubernetes Cluster
-         token:
+        token:
           title: Token
           type: string
           description: Kubernetes Token
