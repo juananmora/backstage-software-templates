@@ -51,7 +51,27 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
-
+    - title: Choose Kubernetes Infrastructure
+      required:
+        - cluster_id
+        - namespace
+      properties:
+        cluster_id:
+          title: Kubernetes Cluster
+          type: stringk
+          description: Name of Kubernetes Cluster
+        namespace:
+          title: Namespace
+          type: string
+          description: Name for the namespace
+        cpu_quota:
+          title: CPU Quota
+          type: string
+          description: Give a value for CPU Quota
+        memory_quota:
+          title: Memory Quota
+          type: string
+          description: Give a value for Memory Quota (Mb)
   steps:
     - id: template
       name: Fetch Skeleton + Template
