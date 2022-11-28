@@ -16,6 +16,19 @@ of headings. Only use one H1 (`#` in Markdown) per file.
 For new pages to appear in the left hand navigation you need edit the `mkdocs.yml`
 file in root of your repo. The navigation can also link out to other sites.
 
+```mermaid
+sequenceDiagram
+    participant dotcom
+    participant iframe
+    participant viewscreen
+    dotcom->>iframe: loads html w/ iframe url
+    iframe->>viewscreen: request template
+    viewscreen->>iframe: html & javascript
+    iframe->>dotcom: iframe ready
+    dotcom->>iframe: set mermaid data on iframe
+    iframe->>iframe: render mermaid
+```
+
 Alternatively, if there is no `nav` section in `mkdocs.yml`, a navigation section
 will be created for you. However, you will not be able to use alternate titles for
 pages, or include links to other sites.
