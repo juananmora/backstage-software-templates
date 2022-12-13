@@ -29,9 +29,9 @@ spec:
           type: string
           description: Name for the java package. eg (io.backstage.blah)
         description:
-          title: Description
+          title: Description for chatGPT
           type: string
-          description: Help others understand what this website is for.
+          description: Help chatGPT understand what this class is for.
         owner:
           title: Owner
           type: string
